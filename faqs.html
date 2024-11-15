@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="keywords" content="hot trip, cheap, fast">
+	<meta name="description" content=" offers a wide selection of tours at an affordable price and will give you the best holiday!">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Travel agency 'Favourite Suitcase'</title>
+</head> 
+<body> 
+	<div class="wrap"> 
+		<header>
+			<img src="img//logo.jpg" id="logo" alt="logo">
+			<input id="burger" type="checkbox" />
+			<label id="cross" for="burger">
+			</label>
+			<nav>
+				<a href="index.html#tours">Tours</a>
+				<a href="index.html#about">About</a>
+				<a href="index.html#cont">Contacts</a>
+			</nav>
+			<div  id="exit">
+				<a href="login.html" id="reg">Login</a>
+			</div>
+			<ul id="breadcrumbs">
+				<li><a href="index.html">Main</a></li>
+				<li>FAQs</li>
+			</ul>
+		</header>
+		<main>
+			<section id="quest">
+				<h2 id="faqs">Frequently asked questions</h2>
+				<div id="accord">
+
+					<div class="indent">
+						<h3 class="topic"> • Where can I buy a tour?<div class="plus"></div></h3>
+						<div class="answer">
+							<p>You can choose a resort and hotel by yourself on favsuitcase.com, and book your tour online. You can also call us at 8(800) 387-75-12 or visit a Favourite Suitcase agency and our manager will choose the tour for you.</p>
+						</div>
+					</div>
+
+					<div class="indent">
+						<h3 class="topic"> • Do you do discounts on tours?<div class="plus"></div></h3>
+						<div class="answer">
+							<p>When you buy a tour online on the site or in our own travel agencies, we give you a discount in accordance with current promotions. Please note that discounts do not add up.</p>
+						</div>
+					</div>
+					
+					<div class="indent">
+						<h3 class="topic"> • How many days in advance can I book my tour?<div class="plus"></div></h3>
+						<div class="answer">
+							<!-- <p>Deadline to submit documents if hotel and plane tickets are available:</p> -->
+							<p>- to visa-free countries - from 3 days before departure;</p>
+							<p>- Visa countries: 9 to 14 days before departure.</p>
+						</div>
+					</div>
+
+					<div class="indent">
+						<h3 class="topic"> • What is a "last minute ticket"?<div class="plus"></div></h3>
+						<div class="answer">
+							<p>It is a special offer from tour operator for specific dates and hotels. Tour operator buys seats on the plane, hotel rooms, paid transfers, etc. for specific dates (or for the whole season). But if some tours remain unsold, the competition between tour operators begins to rapidly reduce prices, which is very profitable for the client.</p>
+						</div>
+					</div>
+
+					<div class="indent">
+						<h3 class="topic"> • How to get a visa for traveling?<div class="plus"></div></h3>
+						<div class="answer">
+							<p>The main condition of getting entry visa is to submit in advance a full package of documents, collected in strict accordance with the requirements of a particular consulate (passport, application form, photo, etc.).</p>
+						</div>
+					</div>
+
+				</div>
+			</section>
+			
+		</main>
+		<footer id="intr">
+			<p id="copy"> &copy; 2011-2021. All rights reserved. Travel agency Favourite Suitcase</p>
+		</footer>
+	</div>
+	<script>
+		let topic = document.getElementsByClassName("topic")
+		let plus = document.getElementsByClassName("plus")
+
+		for(let i = 0; i<topic.length; i++)
+		{
+			topic[i].addEventListener("click", function() {
+				let answ = this.nextElementSibling;
+				if(answ.style.display === "block")
+				{
+					answ.style.display = "none"
+					plus[i].style.backgroundImage = "url('img//plus-512.png')"
+				}
+					
+				else
+				{
+					answ.style.display = "block"
+					plus[i].style.backgroundImage = "url('img//minus.png')"
+				} 
+					
+			})
+		}
+	</script>
+</body>
+</html>
+	
